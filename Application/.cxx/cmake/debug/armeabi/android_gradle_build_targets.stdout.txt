@@ -1,0 +1,188 @@
+ninja: Entering directory `/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/armeabi'
+[0/1] Re-running CMake...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/armeabi
+[1/8] Building CXX object CMakeFiles/imgproc-lib.dir/src/main/cpp/kernel.cpp.o
+[2/8] Building CXX object CMakeFiles/imgproc-lib.dir/src/main/cpp/conversion.cpp.o
+../../../../src/main/cpp/conversion.cpp:80:68: warning: implicit conversion of NULL constant to 'cl_uint' (aka 'unsigned int') [-Wnull-conversion]
+                                 &globalWorkItems, &localWorkItems,NULL,NULL,NULL);
+                                                                   ^~~~
+                                                                   0
+../../../../src/main/cpp/conversion.cpp:87:105: warning: implicit conversion of NULL constant to 'cl_uint' (aka 'unsigned int') [-Wnull-conversion]
+    err = clEnqueueWriteBuffer(GetReadWriteQueue(), d_rawInput1, CL_FALSE, 0, d_rawInput_sz, rawImage1, NULL, NULL, NULL);
+          ~~~~~~~~~~~~~~~~~~~~                                                                          ^~~~
+                                                                                                        0
+../../../../src/main/cpp/conversion.cpp:94:57: warning: implicit conversion of NULL constant to 'cl_uint' (aka 'unsigned int') [-Wnull-conversion]
+                                 &globalWorkItems, NULL,NULL,NULL,NULL);                                 
+                                                        ^~~~
+                                                        0
+../../../../src/main/cpp/conversion.cpp:101:105: warning: implicit conversion of NULL constant to 'cl_uint' (aka 'unsigned int') [-Wnull-conversion]
+    err = clEnqueueWriteBuffer(GetReadWriteQueue(), d_rawInput2, CL_FALSE, 0, d_rawInput_sz, rawImage2, NULL, NULL, NULL);
+          ~~~~~~~~~~~~~~~~~~~~                                                                          ^~~~
+                                                                                                        0
+4 warnings generated.
+[3/8] Building CXX object CMakeFiles/imgproc-lib.dir/src/main/cpp/imgproc-lib.cpp.o
+[4/8] Building CXX object CMakeFiles/imgproc-lib.dir/src/main/cpp/hassproc.cpp.o
+../../../../src/main/cpp/hassproc.cpp:1471:30: warning: array index 20 is past the end of the array (which contains 19 elements) [-Warray-bounds]
+     kernel_control* ctrl = &_kernel_controls[HASS_RAWENC];
+                             ^                ~~~~~~~~~~~
+../../../../src/main/cpp/hassproc.h:47:5: note: array '_kernel_controls' declared here
+    kernel_control _kernel_controls[HASS_KERNEL_NUM];
+    ^
+../../../../src/main/cpp/hassproc.cpp:1740:30: warning: array index 20 is past the end of the array (which contains 19 elements) [-Warray-bounds]
+     kernel_control* ctrl = &_kernel_controls[HASS_RAWENC];
+                             ^                ~~~~~~~~~~~
+../../../../src/main/cpp/hassproc.h:47:5: note: array '_kernel_controls' declared here
+    kernel_control _kernel_controls[HASS_KERNEL_NUM];
+    ^
+../../../../src/main/cpp/hassproc.cpp:2154:30: warning: array index 20 is past the end of the array (which contains 19 elements) [-Warray-bounds]
+     kernel_control* ctrl = &_kernel_controls[HASS_RAWENC];
+                             ^                ~~~~~~~~~~~
+../../../../src/main/cpp/hassproc.h:47:5: note: array '_kernel_controls' declared here
+    kernel_control _kernel_controls[HASS_KERNEL_NUM];
+    ^
+3 warnings generated.
+[5/8] Building C object CMakeFiles/imgproc-lib.dir/src/main/cpp/usb3.c.o
+../../../../src/main/cpp/usb3.c:12088:41: warning: shift count >= width of type [-Wshift-count-overflow]
+    phi=(u32)((((s64)(ftuptr->D2xx_ptr))>>32)&0xFFFFFFFF);
+                                        ^ ~~
+../../../../src/main/cpp/usb3.c:13951:18: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'void *' [-Wint-conversion]
+    pthread_exit(1);
+                 ^
+/home/sam/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/pthread.h:179:24: note: passing argument to parameter here
+void pthread_exit(void*) __noreturn;
+                       ^
+../../../../src/main/cpp/usb3.c:14145:22: warning: incompatible pointer to integer conversion passing 'pthread_t *' (aka 'long *') to parameter of type 'pthread_t' (aka 'long'); remove & [-Wint-conversion]
+        pthread_join(&(thr_ptr->this_thr), &status);
+                     ^~~~~~~~~~~~~~~~~~~~
+/home/sam/android-ndk-r14b/platforms/android-21/arch-arm/usr/include/pthread.h:193:27: note: passing argument to parameter here
+int pthread_join(pthread_t, void**);
+                          ^
+../../../../src/main/cpp/usb3.c:15113:24: warning: incompatible pointer to integer conversion assigning to 'u32' (aka 'unsigned int') from 'void *' [-Wint-conversion]
+        thr_ptr->tpxptr=(void*)(0xFF000000);
+                       ^~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/usb3.c:18857:36: warning: shift count >= width of type [-Wshift-count-overflow]
+    ptrh=(u32)((((s64)(shrMEM_ptr))>>32)&0xFFFFFFFF);
+                                   ^ ~~
+../../../../src/main/cpp/usb3.c:19270:52: warning: incompatible pointer types passing 'u32 [1280]' to parameter of type 'jbyte *' (aka 'signed char *') [-Wincompatible-pointer-types]
+    (*env)->GetByteArrayRegion(env, data, 0, size, ACptr->usb2);
+                                                   ^~~~~~~~~~~
+../../../../src/main/cpp/usb3.c:4506:27: note: expanded from macro 'ACptr'
+#define  ACptr            ((AppCtrlBlk*)shrMEM_ptr)
+                          ^
+../../../../src/main/cpp/usb3.c:19276:52: warning: incompatible pointer types passing 'u32 [1280]' to parameter of type 'const jbyte *' (aka 'const signed char *') [-Wincompatible-pointer-types]
+    (*env)->SetByteArrayRegion(env, data, 0, size, ACptr->usb2);
+                                                   ^~~~~~~~~~~
+../../../../src/main/cpp/usb3.c:4506:27: note: expanded from macro 'ACptr'
+#define  ACptr            ((AppCtrlBlk*)shrMEM_ptr)
+                          ^
+../../../../src/main/cpp/usb3.c:19459:18: warning: incompatible integer to pointer conversion assigning to 's32 *' (aka 'int *') from 's64' (aka 'long') [-Wint-conversion]
+        srcImage = (*(((s64 *) ioptr) + 1));
+                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/usb3.c:19592:18: warning: incompatible integer to pointer conversion assigning to 'u16 *' (aka 'unsigned short *') from 's64' (aka 'long') [-Wint-conversion]
+        srcImage = (*(((s64 *) ioptr) + 1));
+                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../src/main/cpp/usb3.c:19729:29: warning: incompatible pointer types passing 'JNIEnv **' (aka 'const struct JNINativeInterface ***') to parameter of type 'void **' [-Wincompatible-pointer-types]
+    if ((*jvm)->GetEnv(jvm, &env, JNI_VERSION_1_6) != JNI_OK) {
+                            ^~~~
+10 warnings generated.
+[6/8] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/armeabi/libimgproc-lib.so
+FAILED: ../../../../build/intermediates/cmake/debug/obj/armeabi/libimgproc-lib.so 
+: && /home/sam/android-ndk-r14b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/sam/android-ndk-r14b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/sam/android-ndk-r14b/platforms/android-21/arch-arm -fPIC -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now -shared -Wl,-soname,libimgproc-lib.so -o ../../../../build/intermediates/cmake/debug/obj/armeabi/libimgproc-lib.so CMakeFiles/imgproc-lib.dir/src/main/cpp/imgproc-lib.cpp.o CMakeFiles/imgproc-lib.dir/src/main/cpp/kernel.cpp.o CMakeFiles/imgproc-lib.dir/src/main/cpp/conversion.cpp.o CMakeFiles/imgproc-lib.dir/src/main/cpp/hassproc.cpp.o CMakeFiles/imgproc-lib.dir/src/main/cpp/usb3.c.o -L/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL/lib64 -landroid -lOpenCL -lm "/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_static.a" "-latomic" && :
+/home/sam/android-ndk-r14b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: skipping incompatible /home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL/lib64/libOpenCL.so while searching for OpenCL
+/home/sam/android-ndk-r14b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lOpenCL
+../../../../src/main/cpp/kernel.cpp:29: error: undefined reference to '__android_log_print'
+../../../../src/main/cpp/kernel.cpp:34: error: undefined reference to '__android_log_print'
+../../../../src/main/cpp/kernel.cpp:39: error: undefined reference to '__android_log_print'
+../../../../src/main/cpp/kernel.cpp:44: error: undefined reference to '__android_log_print'
+../../../../src/main/cpp/kernel.cpp:175: error: undefined reference to 'clGetPlatformIDs'
+../../../../src/main/cpp/kernel.cpp:179: error: undefined reference to 'clGetPlatformInfo'
+../../../../src/main/cpp/kernel.cpp:212: error: undefined reference to 'clCreateContextFromType'
+../../../../src/main/cpp/kernel.cpp:193: error: undefined reference to 'clGetDeviceIDs'
+../../../../src/main/cpp/kernel.cpp:197: error: undefined reference to 'clGetDeviceInfo'
+../../../../src/main/cpp/kernel.cpp:200: error: undefined reference to 'clGetDeviceInfo'
+../../../../src/main/cpp/kernel.cpp:219: error: undefined reference to 'clCreateCommandQueueWithProperties'
+../../../../src/main/cpp/kernel.cpp:225: error: undefined reference to 'clCreateCommandQueueWithProperties'
+../../../../src/main/cpp/kernel.cpp:59: error: undefined reference to 'clReleaseCommandQueue'
+../../../../src/main/cpp/kernel.cpp:64: error: undefined reference to 'clReleaseCommandQueue'
+../../../../src/main/cpp/kernel.cpp:68: error: undefined reference to 'clReleaseDevice'
+../../../../src/main/cpp/kernel.cpp:72: error: undefined reference to 'clReleaseContext'
+../../../../src/main/cpp/kernel.cpp:106: error: undefined reference to 'clCreateProgramWithSource'
+../../../../src/main/cpp/kernel.cpp:113: error: undefined reference to 'clBuildProgram'
+../../../../src/main/cpp/kernel.cpp:119: error: undefined reference to 'clCreateKernel'
+../../../../src/main/cpp/kernel.cpp:135: error: undefined reference to 'clCreateKernel'
+../../../../src/main/cpp/kernel.cpp:143: error: undefined reference to 'clReleaseKernel'
+../../../../src/main/cpp/kernel.cpp:147: error: undefined reference to 'clReleaseProgram'
+../../../../src/main/cpp/conversion.cpp:42: error: undefined reference to 'clCreateBuffer'
+../../../../src/main/cpp/conversion.cpp:46: error: undefined reference to 'clCreateBuffer'
+../../../../src/main/cpp/conversion.cpp:50: error: undefined reference to 'clSetKernelArg'
+../../../../src/main/cpp/conversion.cpp:52: error: undefined reference to 'clSetKernelArg'
+../../../../src/main/cpp/conversion.cpp:55: error: undefined reference to 'clCreateBuffer'
+../../../../src/main/cpp/conversion.cpp:58: error: undefined reference to 'clCreateBuffer'
+../../../../src/main/cpp/conversion.cpp:62: error: undefined reference to 'clSetKernelArg'
+../../../../src/main/cpp/conversion.cpp:64: error: undefined reference to 'clSetKernelArg'
+../../../../src/main/cpp/conversion.cpp:79: error: undefined reference to 'clEnqueueNDRangeKernel'
+../../../../src/main/cpp/conversion.cpp:84: error: undefined reference to 'clEnqueueReadBuffer'
+../../../../src/main/cpp/conversion.cpp:87: error: undefined reference to 'clEnqueueWriteBuffer'
+../../../../src/main/cpp/conversion.cpp:90: error: undefined reference to 'clFinish'
+../../../../src/main/cpp/conversion.cpp:91: error: undefined reference to 'clFinish'
+../../../../src/main/cpp/conversion.cpp:92: error: undefined reference to 'clEnqueueNDRangeKernel'
+../../../../src/main/cpp/conversion.cpp:98: error: undefined reference to 'clEnqueueReadBuffer'
+../../../../src/main/cpp/conversion.cpp:101: error: undefined reference to 'clEnqueueWriteBuffer'
+../../../../src/main/cpp/conversion.cpp:104: error: undefined reference to 'clFinish'
+../../../../src/main/cpp/conversion.cpp:105: error: undefined reference to 'clFinish'
+../../../../src/main/cpp/conversion.cpp:112: error: undefined reference to 'clReleaseKernel'
+../../../../src/main/cpp/conversion.cpp:113: error: undefined reference to 'clReleaseMemObject'
+../../../../src/main/cpp/conversion.cpp:114: error: undefined reference to 'clReleaseMemObject'
+../../../../src/main/cpp/conversion.cpp:115: error: undefined reference to 'clReleaseMemObject'
+../../../../src/main/cpp/conversion.cpp:116: error: undefined reference to 'clReleaseMemObject'
+../../../../src/main/cpp/hassproc.cpp:692: error: undefined reference to 'clEnqueueWriteBuffer'
+../../../../src/main/cpp/hassproc.cpp:693: error: undefined reference to 'clEnqueueWriteBuffer'
+../../../../src/main/cpp/hassproc.cpp:1594: error: undefined reference to 'clEnqueueNDRangeKernel'
+../../../../src/main/cpp/hassproc.cpp:1612: error: undefined reference to 'clEnqueueNDRangeKernel'
+../../../../src/main/cpp/hassproc.cpp:1760: error: undefined reference to 'clEnqueueFillBuffer'
+../../../../src/main/cpp/hassproc.cpp:1762: error: undefined reference to 'clEnqueueReadBuffer'
+../../../../src/main/cpp/hassproc.cpp:1925: error: undefined reference to 'clEnqueueMapBuffer'
+../../../../src/main/cpp/hassproc.cpp:1926: error: undefined reference to 'clEnqueueMapBuffer'
+../../../../src/main/cpp/hassproc.cpp:1934: error: undefined reference to 'clEnqueueUnmapMemObject'
+../../../../src/main/cpp/hassproc.cpp:1935: error: undefined reference to 'clEnqueueUnmapMemObject'
+../../../../src/main/cpp/hassproc.cpp:1957: error: undefined reference to 'clEnqueueMapBuffer'
+../../../../src/main/cpp/hassproc.cpp:1958: error: undefined reference to 'clEnqueueMapBuffer'
+../../../../src/main/cpp/hassproc.cpp:1966: error: undefined reference to 'clEnqueueUnmapMemObject'
+../../../../src/main/cpp/hassproc.cpp:1967: error: undefined reference to 'clEnqueueUnmapMemObject'
+../../../../src/main/cpp/hassproc.cpp:1987: error: undefined reference to 'clEnqueueReadBuffer'
+../../../../src/main/cpp/usb3.c:17553: error: undefined reference to 'clSetKernelArgSVMPointer'
+../../../../src/main/cpp/usb3.c:17556: error: undefined reference to 'clSetKernelArgSVMPointer'
+../../../../src/main/cpp/usb3.c:17559: error: undefined reference to 'clSetKernelArgSVMPointer'
+../../../../src/main/cpp/usb3.c:17583: error: undefined reference to 'clSetKernelArgSVMPointer'
+../../../../src/main/cpp/usb3.c:18193: error: undefined reference to 'clEnqueueSVMUnmap'
+../../../../src/main/cpp/usb3.c:18231: error: undefined reference to 'clEnqueueSVMMap'
+../../../../src/main/cpp/usb3.c:14353: error: undefined reference to 'clEnqueueSVMMap'
+../../../../src/main/cpp/usb3.c:15728: error: undefined reference to 'clSVMAlloc'
+../../../../src/main/cpp/usb3.c:15739: error: undefined reference to 'clSVMFree'
+../../../../src/main/cpp/usb3.c:15753: error: undefined reference to 'clEnqueueSVMMap'
+../../../../src/main/cpp/usb3.c:15759: error: undefined reference to 'clEnqueueSVMUnmap'
+../../../../src/main/cpp/usb3.c:15778: error: undefined reference to 'clEnqueueSVMMap'
+../../../../src/main/cpp/usb3.c:15784: error: undefined reference to 'clEnqueueSVMUnmap'
+../../../../src/main/cpp/usb3.c:15807: error: undefined reference to 'clEnqueueSVMUnmap'
+../../../../src/main/cpp/usb3.c:17196: error: undefined reference to 'clGetPlatformIDs'
+../../../../src/main/cpp/usb3.c:17198: error: undefined reference to 'clGetPlatformInfo'
+../../../../src/main/cpp/usb3.c:17202: error: undefined reference to 'clCreateContextFromType'
+../../../../src/main/cpp/usb3.c:17203: error: undefined reference to 'clGetDeviceIDs'
+../../../../src/main/cpp/usb3.c:17245: error: undefined reference to 'clGetProgramBuildInfo'
+../../../../src/main/cpp/usb3.c:17250: error: undefined reference to 'clGetProgramBuildInfo'
+../../../../src/main/cpp/usb3.c:17270: error: undefined reference to 'clCreateProgramWithSource'
+../../../../src/main/cpp/usb3.c:17272: error: undefined reference to 'clBuildProgram'
+../../../../src/main/cpp/usb3.c:17294: error: undefined reference to 'clCreateProgramWithSource'
+../../../../src/main/cpp/usb3.c:17296: error: undefined reference to 'clBuildProgram'
+../../../../src/main/cpp/usb3.c:17317: error: undefined reference to 'clCreateKernel'
+../../../../src/main/cpp/usb3.c:17335: error: undefined reference to 'clCreateKernel'
+../../../../src/main/cpp/usb3.c:17447: error: undefined reference to 'clCreateCommandQueueWithProperties'
+../../../../src/main/cpp/usb3.c:17493: error: undefined reference to 'clReleaseKernel'
+../../../../src/main/cpp/usb3.c:17497: error: undefined reference to 'clReleaseProgram'
+../../../../src/main/cpp/usb3.c:17523: error: undefined reference to 'clReleaseContext'
+../../../../src/main/cpp/imgproc-lib.cpp:88: error: undefined reference to 'clEnqueueFillBuffer'
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+[7/8] Building CXX object CMakeFiles/hello-jnicallback.dir/src/main/cpp/hello-jnicallback.cpp.o
+ninja: build stopped: subcommand failed.

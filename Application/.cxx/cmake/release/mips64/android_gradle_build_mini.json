@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "/home/sam/android-ndk-r14b/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips64\" clean"
+  ],
+  "buildTargetsCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "hello-jnicallback-Release-mips64": {
+      "artifactName": "hello-jnicallback",
+      "buildCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips64\" hello-jnicallback",
+      "abi": "mips64",
+      "output": "/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/mips64/libhello-jnicallback.so",
+      "runtimeFiles": [
+        "/home/sam/Downloads/OpenCV-android-sdk/sdk/native/libs/mips64/libopencv_java3.so"
+      ]
+    },
+    "imgproc-lib-Release-mips64": {
+      "artifactName": "imgproc-lib",
+      "buildCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips64\" imgproc-lib",
+      "abi": "mips64",
+      "output": "/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/mips64/libimgproc-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 21 min SDK version: armeabi",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "Trying to locate CMake in local SDK repository.",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027/home/sam/Android/Sdk/cmake/3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "Replacing toolchain \u0027/home/sam/android-ndk-r14b/build/cmake/android.toolchain.cmake\u0027 with wrapper \u0027/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/pre-ndk-r15-wrapper-android.toolchain.cmake\u0027",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON /home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/android_gradle_build.json due to:",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "- a dependent build file changed",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "  - /home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "keeping json folder \u0027/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\u0027 but regenerating project",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : /home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/cmake\narguments : \n-H/home/sam/Documents/android-Camera2Basic-master/Application\n-DCMAKE_FIND_ROOT_PATH\u003d/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/prefab/armeabi/prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/pre-ndk-r15-wrapper-android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi\n-DANDROID_NDK\u003d/home/sam/android-ndk-r14b\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi\n-DCMAKE_ANDROID_NDK\u003d/home/sam/android-ndk-r14b\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/armeabi\n-DCMAKE_MAKE_PROGRAM\u003d/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-B/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\n-GNinja\njvmArgs : \n\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"/home/sam/Documents/android-Camera2Basic-master/Application\",\n  \"buildDirectory\": \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003d/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/prefab/armeabi/prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelease\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003d/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/pre-ndk-r15-wrapper-android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darmeabi\",\n    \"-DANDROID_NDK\\u003d/home/sam/android-ndk-r14b\",\n    \"-DANDROID_PLATFORM\\u003dandroid-21\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi\",\n    \"-DCMAKE_ANDROID_NDK\\u003d/home/sam/android-ndk-r14b\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003d/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/armeabi\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003d/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d21\"\n  ]\n}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring done",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"compute\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "Generating done",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"cmakeInputs\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"../../../android-ndk-r14b/build/cmake/android.toolchain.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\".cxx/cmake/release/armeabi/CMakeFiles/3.10.2/CMakeSystem.cmake\",\".cxx/cmake/release/armeabi/pre-ndk-r15-wrapper-android.toolchain.cmake\",\".cxx/cmake/release/armeabi/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/release/armeabi/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"/home/sam/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application\",\"type\":\"reply\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"codemodel\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\",\"name\":\"Project\",\"sourceDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application\",\"targets\":[{\"artifacts\":[\"/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/armeabi/libimgproc-lib.so\"],\"buildDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march\u003darmv5te -mtune\u003dxscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror\u003dformat-security  -Os -DNDEBUG  -fPIC  \",\"defines\":[\"imgproc_lib_EXPORTS\"],\"includePath\":[{\"path\":\"/home/sam/Downloads/OpenCV-android-sdk/sdk/native/jni/include\"},{\"path\":\"/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL\"}],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/usb3.c\"]},{\"compileFlags\":\"-g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march\u003darmv5te -mtune\u003dxscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror\u003dformat-security   -Os -DNDEBUG  -fPIC   -std\u003dc++1z\",\"defines\":[\"imgproc_lib_EXPORTS\"],\"includePath\":[{\"path\":\"/home/sam/Downloads/OpenCV-android-sdk/sdk/native/jni/include\"},{\"path\":\"/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"src/main/cpp/imgproc-lib.cpp\",\"src/main/cpp/kernel.cpp\",\"src/main/cpp/conversion.cpp\",\"src/main/cpp/hassproc.cpp\"]}],\"fullName\":\"libimgproc-lib.so\",\"linkFlags\":\"-Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now\",\"linkLibraries\":\"-landroid -lOpenCL -lm \\\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_static.a\\\" \\\"-latomic\\\"\",\"linkPath\":\"-L/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL/lib64\",\"linkerLanguage\":\"CXX\",\"name\":\"imgproc-lib\",\"sourceDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application\",\"sysroot\":\"/home/sam/android-ndk-r14b/platforms/android-21/arch-arm\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/release/obj/armeabi/libhello-jnicallback.so\"],\"buildDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march\u003darmv5te -mtune\u003dxscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror\u003dformat-security   -Os -DNDEBUG  -fPIC   -std\u003dc++1z\",\"defines\":[\"hello_jnicallback_EXPORTS\"],\"includePath\":[{\"path\":\"/home/sam/Downloads/OpenCV-android-sdk/sdk/native/jni/include\"},{\"path\":\"/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include\"},{\"isSystem\":true,\"path\":\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"src/main/cpp/hello-jnicallback.cpp\"]}],\"fullName\":\"libhello-jnicallback.so\",\"linkFlags\":\"-Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now\",\"linkLibraries\":\"-landroid /home/sam/Downloads/OpenCV-android-sdk/sdk/native/libs/armeabi/libopencv_java3.so -llog -lm \\\"/home/sam/android-ndk-r14b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_static.a\\\" \\\"-latomic\\\"\",\"linkPath\":\"-L/home/sam/Documents/android-Camera2Basic-master/Application/src/main/cpp/OpenCL/lib64\",\"linkerLanguage\":\"CXX\",\"name\":\"hello-jnicallback\",\"sourceDirectory\":\"/home/sam/Documents/android-Camera2Basic-master/Application\",\"sysroot\":\"/home/sam/android-ndk-r14b/platforms/android-21/arch-arm\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output /home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/build_output.txt",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file /home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi/build_command.txt",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "tag": "release|armeabi"
+  }
+]

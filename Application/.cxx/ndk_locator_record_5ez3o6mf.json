@@ -1,0 +1,11 @@
+{
+  "ndk": "/home/sam/android-ndk-r14b",
+  "revision": {
+    "mMajor": 14,
+    "mMinor": 1,
+    "mMicro": 3816874,
+    "mPreview": 0,
+    "mPrecision": "MICRO",
+    "mPreviewSeparator": " "
+  }
+}

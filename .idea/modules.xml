@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-Camera2Basic-master.iml" filepath="$PROJECT_DIR$/android-Camera2Basic-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/android-Camera2Basic-master.Application.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/android-Camera2Basic-master.Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openCVLibrary342/android-Camera2Basic-master.openCVLibrary342.iml" filepath="$PROJECT_DIR$/.idea/modules/openCVLibrary342/android-Camera2Basic-master.openCVLibrary342.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+{
+  "buildFiles": [
+    "/home/sam/Documents/android-Camera2Basic-master/Application/CMakeLists.txt",
+    "/home/sam/android-ndk-r16b/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "imgproc-lib-Debug-arm64-v8a": {
+      "artifactName": "imgproc-lib",
+      "buildCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/arm64-v8a\" imgproc-lib",
+      "abi": "arm64-v8a",
+      "output": "/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/debug/obj/arm64-v8a/libimgproc-lib.so",
+      "runtimeFiles": [
+        "/home/sam/android-ndk-r16b/platforms/android-21/arch-arm64/usr/lib/liblog.so"
+      ]
+    },
+    "hello-jnicallback-Debug-arm64-v8a": {
+      "artifactName": "hello-jnicallback",
+      "buildCommand": "/home/sam/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/debug/arm64-v8a\" hello-jnicallback",
+      "abi": "arm64-v8a",
+      "output": "/home/sam/Documents/android-Camera2Basic-master/Application/build/intermediates/cmake/debug/obj/arm64-v8a/libhello-jnicallback.so",
+      "runtimeFiles": [
+        "/home/sam/Downloads/OpenCV-android-sdk/sdk/native/libs/arm64-v8a/libopencv_java3.so"
+      ]
+    }
+  }
+}

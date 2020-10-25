@@ -1,0 +1,4 @@
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi-v7a/CMakeFiles/imgproc-lib.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/armeabi-v7a/CMakeFiles/hello-jnicallback.dir

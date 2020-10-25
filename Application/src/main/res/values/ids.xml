@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textStatus" type="id" />
+    <item name="numberWavelength" type="id"></item>
+    <item name="buttonStream" type="id" />
+    <item name="buttonSnapshot" type="id" />
+    <item name="buttonSettings" type="id" />
+    <item name="numberIrLed" type="id" />
+    <item name="numberGain" type="id" />
+    <item name="numberExposure" type="id" />
+    <item name="numberNr" type="id" />
+</resources>

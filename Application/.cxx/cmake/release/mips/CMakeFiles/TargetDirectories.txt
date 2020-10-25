@@ -1,0 +1,4 @@
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips/CMakeFiles/edit_cache.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips/CMakeFiles/rebuild_cache.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips/CMakeFiles/imgproc-lib.dir
+/home/sam/Documents/android-Camera2Basic-master/Application/.cxx/cmake/release/mips/CMakeFiles/hello-jnicallback.dir
