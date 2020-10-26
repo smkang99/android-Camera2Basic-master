@@ -13,13 +13,11 @@ set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION /home/sam/Download
 add_library(hello-jnicallback SHARED
         src/main/cpp/hello-jnicallback.cpp)
 
-add_library( imgproc-lib
-             SHARED
-             src/main/cpp/imgproc-lib.cpp
-             src/main/cpp/kernel.cpp
-             src/main/cpp/conversion.cpp
-             src/main/cpp/hassproc.cpp
-             src/main/cpp/usb3.c
+add_library( openclexample1
+        SHARED
+        src/main/cpp/OpenCLexample1.cpp
+        src/main/cpp/openCLNR.cpp
+        src/main/cpp/refNR.cpp
         )
 
 find_library( log-lib
@@ -30,7 +28,9 @@ target_link_libraries(hello-jnicallback
         lib_opencv
         log)
 
-target_link_libraries( imgproc-lib
-                       ${log-lib}
-                       android
-                       OpenCL )
+
+target_link_libraries( openclexample1
+        ${log-lib}
+        android
+        OpenCL
+        -ljnigraphics)

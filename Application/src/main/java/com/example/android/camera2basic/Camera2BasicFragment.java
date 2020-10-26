@@ -73,6 +73,8 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -84,6 +86,8 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 import java.util.Observable;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class Camera2BasicFragment extends Fragment
         implements View.OnClickListener,
@@ -313,7 +317,7 @@ public class Camera2BasicFragment extends Fragment
     private final ImageReader.OnImageAvailableListener mOnImageAvailableListener
             = new ImageReader.OnImageAvailableListener() {
 
-        private  Observable obj;
+        private  Observable obj = new Observable();
 
         @Override
         public void onImageAvailable(ImageReader reader) {
@@ -348,8 +352,11 @@ public class Camera2BasicFragment extends Fragment
             } else {
                 image.close();
             }
+
+            runOpenCL(bmpOrig, bmpOpenCL, info);
             // Don't need to save Image SMK
             //mBackgroundHandler.post(new ImageSaver(image, mFile, mCameraCharacteristics,mCR));
+
         }
 
     };
@@ -466,6 +473,7 @@ public class Camera2BasicFragment extends Fragment
             }
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.N)
         @Override
         public void onCaptureProgressed(@NonNull CameraCaptureSession session,
                                         @NonNull CaptureRequest request,
@@ -473,6 +481,7 @@ public class Camera2BasicFragment extends Fragment
             process(partialResult);
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.N)
         @Override
         public void onCaptureCompleted(@NonNull CameraCaptureSession session,
                                        @NonNull CaptureRequest request,
@@ -548,6 +557,23 @@ public class Camera2BasicFragment extends Fragment
         }
     }
 
+    private static boolean sFoundLibrary = true;
+
+    static {
+        try {
+            System.loadLibrary("openclexample1");
+        }
+        catch(UnsatisfiedLinkError e){
+            sFoundLibrary = false;
+        }
+    }
+
+    public static native int runOpenCL(Bitmap bmpIn, Bitmap bmpOut, int infor[]);
+
+    public static native int runNativeC(Bitmap bmpIn, Bitmap bmpOut, int infor[]);
+
+    final int info[] = new int[3];
+
     public static Camera2BasicFragment newInstance() {
         return new Camera2BasicFragment();
     }
@@ -558,6 +584,7 @@ public class Camera2BasicFragment extends Fragment
         return inflater.inflate(R.layout.fragment_camera2_basic, container, false);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(R.id.picture).setOnClickListener(this);
@@ -566,19 +593,48 @@ public class Camera2BasicFragment extends Fragment
         focusSeekBar =(SeekBar)view.findViewById(R.id.focus);
         focusSeekBar.setOnSeekBarChangeListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
+
+        bmpOrig = BitmapFactory.decodeResource(getResources(),R.drawable.brusigablommor);
+        info[0] = bmpOrig.getWidth();
+        info[1] = bmpOrig.getHeight();
+
+        bmpOpenCL = Bitmap.createBitmap(info[0], info[1], Bitmap.Config.ARGB_8888);
+
+        copyFile("bilateralKernel.cl");
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public void copyFile(final String f) {
+        InputStream in;
+        try {
+            in = getContext().getAssets().open(f);
+            final File of = new File(getContext().getDir("execdir",MODE_PRIVATE), f);
+
+            final OutputStream out = new FileOutputStream(of);
+
+            final byte b[] = new byte[65535];
+            int sz = 0;
+            while ((sz = in.read(b)) > 0) {
+                out.write(b, 0, sz);
+            }
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         String timeStamp = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        mImageFormat = ImageFormat.RAW_SENSOR;
+        mImageFormat = ImageFormat.RAW10;//ImageFormat.RAW_SENSOR;
         if(mImageFormat == ImageFormat.JPEG)
           mFile = new File(getActivity().getExternalFilesDir(null), "IMG_"+ timeStamp +".jpg");
         else if(mImageFormat == ImageFormat.RAW_SENSOR)
           mFile = new File(getActivity().getExternalFilesDir(null), "IMG_"+ timeStamp +".dng");
         else
-          mFile = new File(getActivity().getExternalFilesDir(null), "IMG_"+ timeStamp +".jpg");
+          mFile = new File(getActivity().getExternalFilesDir(null), "IMG_"+ timeStamp +".dng");
     }
 
     @Override
@@ -858,6 +914,7 @@ public class Camera2BasicFragment extends Fragment
     //base on Nexcus 6P:[60,7656]
     private int valueISO  = 60;
 
+    public Bitmap bmpOrig, bmpOpenCL, bmpNativeC;
     private void initPreviewBuilder() {
         mPreviewRequestBuilder.set(CaptureRequest.CONTROL_MODE, CameraMetadata.CONTROL_MODE_OFF);
 

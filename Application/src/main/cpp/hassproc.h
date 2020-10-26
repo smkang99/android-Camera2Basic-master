@@ -3,7 +3,7 @@
 
 #include "kernel.h"
 
-//typedef signed char jbyte;
+typedef signed char jbyte;
 
 #define HASS_KERNEL_NUM 19
 #define COEFF_FOR_DEMO_LENS

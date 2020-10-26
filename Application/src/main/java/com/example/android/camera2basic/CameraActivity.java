@@ -55,7 +55,8 @@ public class CameraActivity extends Activity {
             Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
 
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            myBitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
+            if(myBitmap != null)
+              myBitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
 
             byte[] array = stream.toByteArray();
 
